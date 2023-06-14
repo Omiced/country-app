@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
-
+import { AppRountingModule } from './app-rounting.module';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AppRountingModule,
     BrowserModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
