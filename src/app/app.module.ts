@@ -4,16 +4,11 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import { AppRountingModule } from './app-rounting.module';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    AppRountingModule,
-    BrowserModule,
-    SharedModule,
-  ],
+  declarations: [AppComponent],
+  imports: [AppRountingModule, BrowserModule, SharedModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
